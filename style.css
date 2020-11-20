@@ -93,6 +93,12 @@ footer{
         display: block;
         margin: 3rem auto;
     }
+ h1{
+        font-size: 1.8rem;
+    }
+    h2{
+        font-size: 1.1rem;  
+    }
     .row{
         border-radius: 1rem 1rem 0 0 ;
     }
