@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+ 
+body{
+    font-family: 'Karla', sans-serif;
+    color: white;
+    line-height: 1.5;
+    background: hsl(204, 43%, 93%);
+}
+.container{
+    display: grid;
+    width: 50%;
+    margin: 0 auto ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "row row "
+    "col1 col2"
+}
+h1{
+    color: hsl(179, 62%, 43%);
+}
+ .col1 h1{
+    color: white;
+}
+.col1 h1::after{
+    content: 'per month';
+    color: white;
+    font-size: 1rem;
+    opacity: 0.5;
+    font-weight: 100;
+}
+.row{
+    background: #ffffff;
+}
+.col2 p{
+    opacity: 0.8;
+}
+span{
+    font-size: 1rem;
+    opacity: 0.5;
+    font-weight: 50;
+}
+h2{
+    color: hsl(71, 73%, 54%);
+}
+.row p{
+    color: rgb(0,0,0,0.5);
+}
+.container .row, .col1, .col2{
+    padding: 1.68rem;
+}
+.row{
+grid-area: row;
+border-radius: 1rem 1rem 0 0;
+
+
+}
+.col1{
+grid-area: col1;
+background-color: hsl(179, 62%, 43%);
+border-radius: 0 0 0 1rem;
+
+}
+.col2{
+grid-area: col2;
+background-color: hsl(179, 62%, 60%);
+border-radius: 0 0 1rem 0;
+
+}
+button{
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    color: white;
+    border-radius: 0.3rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    width: 15rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+
+}
+footer{
+    color: black;
+}
+.attribution { font-size: 0.8rem; text-align: center; }
+    .attribution a { color: hsl(310, 45%, 44%); }
+    a{
+        text-decoration: none;
+    }
+@media only screen and (max-width:721px){
+    .container{
+        width: 90%;
+        display: block;
+        margin: 3rem auto;
+    }
+    .row{
+        border-radius: 1rem 1rem 0 0 ;
+    }
+    .col1{
+        border-radius: 0;
+    }
+    .col2{
+        border-radius:  0 0 1rem 1rem;
+    }
+    button{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
